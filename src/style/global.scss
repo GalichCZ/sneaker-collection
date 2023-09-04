@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #root{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    background-color: $bg;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+input:focus{
+    outline: none;
+}
+
+h1,h2{
+    font-family: 'Boxing', sans-serif;
+}
+
+h3{
+    font-family: "ExconBold", sans-serif;
+}
+
+%medium-font{
+    font-family: "ExconMedium", sans-serif;
+}
+
+%regular-font{
+    font-family: "ExconRegular", sans-serif;
+}
+
+a{
+    color: $means-white;
+    text-decoration: none;
+    &:visited{
+        color: $means-white;
+    }
+}

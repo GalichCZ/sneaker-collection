@@ -1,0 +1,16 @@
+.means-button{
+    background-color: $means-black;
+    border-radius: 12px;
+    border: none;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: $means-white;
+    display: flex;
+    align-items: center;
+    &:hover{
+        box-shadow: 1px 1px 30px $means-red-shadow;
+        transition: 0.3s;
+    }
+    @extend %medium-font
+}

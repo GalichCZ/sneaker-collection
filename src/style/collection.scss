@@ -1,0 +1,195 @@
+%input{
+    border-radius: 8px;
+    border: 1px solid $means-gray80;
+    &:hover{
+        outline: 1px solid $hover;
+    }
+    &:focus{
+        outline: 2px solid $means-black;
+    }
+    @extend %regular-font;
+}
+
+.collection-section{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.collection{
+    height: 95%;
+    width: 100%;
+}
+
+.collection-blank{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    > p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 2rem;
+        @extend %regular-font;
+    }
+}
+
+.collection-head{
+    display: flex;
+    padding: 0 4rem;
+    justify-content: space-between;
+    align-items: center;
+    > h1{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    > div{
+        display: flex;
+        max-height: 48px;
+    }
+}
+
+.collection-drawer{
+    > button{
+        margin-left: 20px;
+        > svg{
+            margin-right: 10px;
+        }
+    }
+}
+
+.collection-search{
+    display: flex;
+    position: relative;
+    > input{
+        padding-left: 40px;
+        @extend %input;
+    }
+    > svg{
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        color: $means-gray80;
+    }
+}
+
+.collection-card{
+    background-color: $means-white;
+    position: relative;
+    max-width: 380px;
+    border-radius: 24px;
+    padding: 24px;
+    > svg{
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    > p{
+        font-size: 16px;
+        @extend %regular-font;
+        margin: 10px 0 20px 0;
+    }
+    > div{
+        display: flex;
+        div{
+            width: 120px;
+            &:nth-child(2){
+                padding-left: 20px;
+                margin-right: 20px;
+                border-left: 1px solid $means-gray80;
+                border-right: 1px solid $means-gray80;
+            }
+            @extend %regular-font
+        }
+    }
+}
+
+.collection-radio{
+    display: flex;
+    align-items: center;
+    @extend %regular-font
+}
+
+.collection-radio_component{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4rem;
+    margin-top: 2rem;
+}
+
+.collection-button{
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 12px;
+    margin-left: 10px;
+    color: $means-black;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    p{
+        margin-left: 5px;
+    }
+    svg path{
+        fill: $means-black;
+    }
+    border: 1px solid $means-black;
+}
+
+.checked{
+    background-color: $means-red;
+    color: $means-white;
+    border: 1px solid $means-red;
+    transition: 0.3s;
+    svg path{
+        transition: 0.3s;
+        fill: $means-white;
+    }
+}
+
+.collection-grid{
+    display: grid;
+    margin-top: 2rem;
+    justify-items: center;
+    row-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.collection-form{
+    padding: 3rem 3rem;
+    > h1{
+        max-width: 450px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    > form{
+        margin-top: 2rem;
+        > button{
+            width: 100%;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.collection-input{
+    display: flex;
+    flex-direction: column;
+    color:$means-gray50;
+    @extend %regular-font;
+    margin: 1rem 0;
+    > input{
+        margin-top: 5px;
+        padding: 12px 16px;
+        &:focus{
+            outline:2px solid $focus;
+        }
+        @extend %input;
+    }
+}
